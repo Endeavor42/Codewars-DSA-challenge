@@ -29,7 +29,14 @@ int main()
     for (int i = 0; i < digits.size(); i++)
         num2 += digits[digits.size() - i - 1] * pow(10, i);
     cout << num2;
-
+    // Another method
+    int num = 123;
+    int reverse_num = 0;
+    for (int i = floor(log10(num)); i >= 0; i--)
+    {
+        reverse_num += (num % 10) * pow(10, i);
+        num /= 10;
+    }
     // -------------
 
     // string comment = "Hello World";

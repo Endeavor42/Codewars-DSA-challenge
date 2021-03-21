@@ -18,6 +18,5 @@ public:
 
 int main()
 {
-    Bouncingball b;
-    cout << b.bouncingBall(3, 0.66, 1.5);
+    cout << Bouncingball::bouncingBall;
 }

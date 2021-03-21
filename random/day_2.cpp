@@ -34,5 +34,5 @@ int stray_clever1(vector<int> numbers)
 
 int main()
 {
-    cout << stray_clever(vector<int>{3, 2, 2});
+    cout << stray_clever1(vector<int>{3, 2, 2, 5});
 }
