@@ -11,7 +11,6 @@ int main()
     string line;
     getline(cin, line);
     stringstream ss(line);
-
     stack<char> myStack;
     char c;
     while (ss >> c)
