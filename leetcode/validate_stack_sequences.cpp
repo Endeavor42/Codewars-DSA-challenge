@@ -11,16 +11,15 @@ public:
     bool validateStackSequences(vector<int> pushed, vector<int> popped)
     {
         stack<int> st;
-        int i = 0;
         // Iterate through the values of pushed
-        for (auto val : pushed)
+        for (int i = 0; auto val : pushed)
         {
-            // iterate until we see that value of pushed matches with the first element of popped
+            // iterate until we see that the value of pushed matches with the first element of popped
             if (val == popped[i])
             {
                 ++i;
                 // As long as the stack is not empty and the top of the stack matches with the current popped element
-                // then pop the  stack
+                // then pop the stack
                 while (!st.empty() && st.top() == popped[i])
                 {
                     st.pop();

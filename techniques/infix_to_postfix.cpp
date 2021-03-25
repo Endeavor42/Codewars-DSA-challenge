@@ -17,6 +17,7 @@ bool isOperator(char c)
 {
     switch (c)
     {
+    case '^':
     case '*':
     case '/':
     case '+':
@@ -34,6 +35,8 @@ bool hasHigherPrec(char top, char c)
     auto check = [](char c) {
         switch (c)
         {
+        case '^':
+            return 3;
         case '*':
         case '/':
             return 2;
